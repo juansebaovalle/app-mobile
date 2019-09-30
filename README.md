@@ -2,61 +2,65 @@
 
 ## Ejercicios Modulo 1
 
-### 1)Crear una app en blanco.
-```
-$ ionic start ejercicio blank --type=ionic-angular --cordova
+### 1)Crear una app en blanco
 
-$ cd ejercicio
+```bash
+ ionic start modulo1 blank --type=angular --cordova
+
+ cd modulo1
 ```
 
 Actualizar id y nombre de app en config.xml
 
-Si se quiere agregar a un repositorio ya creado (pero vacío)
-
-```
-$ git remote add origin https://github.com/janaravena/oraculus.git #por ejemplo
-```
-
-### 2)Crear iconos y splash.
-
-```
-$ ionic cordova platform add android
-
-$ ionic cordova resources
-```
-### 3)Agregar una página de detalle.
-```
-$ ionic generate page entrar
+```xml
+<widget id="cl.laboratoriodiseno.aaravena.modulo1" ...>
+    <name>modulo1</name>
+    <description>Ejercicio primer modulo</description>
 ```
 
-### 4)Transformar título de barra de navegación en variable.
-### 5)Agregar imágenes en la barra de navegación.
-### 6)Crear una lista.
-### 7)Utilizar un objeto json para el contenido.
-### 8)Transformar el header en componente.
-```
-$ ionic generate component encabezado
+Agregar a un repositorio ya creado (pero vacío)
+
+```bash
+ git remote add origin https://github.com/alaravena/Modulo1.git #por ejemplo
 ```
 
+### 2)Crear iconos y splash
 
-## Ejercicios Modulo 2
+Modificar icono.png y splash.png
 
-### 1)Debugear la aplicación.
-### 2)Utilizar Lazy Loading.
-### 3)Utilizar navegación para el paso de variables a detalle.
-### 4)Consumir servicio para el listado y el detalle.
+```bash
+ ionic cordova platform add android
+ ionic cordova platform ios android
+
+ ionic cordova resources
 ```
-$ ionic generate provider personas
+
+Es un buen momento para hacer un push del repositorio.
+
+### 3)Agregar una página de detalle
+
+```bash
+ ionic generate page detalle
 ```
-**GET:** https://reqres.in/api/users?per_page=10
 
-### 5)Crear páginas y servicios para función agregar.
-https://uifaces.co/
+### 4)Transformar título de barra de navegación en variable
 
-**POST:** https://reqres.in/api/users
+Segun Slide
 
-### 6)Agregar función para editar.
-**PUT:** https://reqres.in/api/users/***id***
+### 5)Agregar una imagen en la barra de navegación
 
-### 7)Agregar función para eliminar.
-**DELETE:** https://reqres.in/api/users/***id***
+Segun Slide
+
+### 6)Crear una lista en home
+
+Segun Slide
+
+### 7)Utilizar un objeto json para el contenido
+
+### 8)Transformar el header en componente
+
+Segun Slide
+
+```bash
+ ionic generate component encabezado
+```
