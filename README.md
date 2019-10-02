@@ -62,9 +62,12 @@ https://ionicframework.com/docs/api/list
 Segun Slide 25
 
 ### 8)Transformar el header en componente
-
-Segun Slide
+Segun slide 19 y 20
 
 ```bash
- ionic generate component encabezado
+ionic generate module components
+ionic generate component components/encabezado --export
 ```
+Trasladar el encabezado desde el home al componente.
+El titulo se transforma en directiva.
+Importar ComponentsModule a home.module.ts y a detalle.module.ts
