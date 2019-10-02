@@ -40,20 +40,21 @@ Es un buen momento para hacer un push del repositorio.
 ### 3)Agregar una página de detalle
 
 ```bash
- ionic generate page detalle
+ ionic generate page pages/detalle
 ```
+Trasladar home a carpeta pages y actualizar routing
 
 ### 4)Transformar título de barra de navegación en variable
 
-Segun Slide
+Segun Slide 23 y 24
 
 ### 5)Agregar una imagen en la barra de navegación
 
-Segun Slide
+Segun Slides
 
 ### 6)Crear una lista en home
 
-Segun Slide
+Segun Slide 24
 
 ### 7)Utilizar un objeto json para el contenido
 

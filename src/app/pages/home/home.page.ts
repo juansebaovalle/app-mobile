@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  TituloPagina: string = "Listado";
+
   constructor() {}
 
 }
