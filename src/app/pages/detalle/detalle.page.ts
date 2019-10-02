@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detalle',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetallePage implements OnInit {
 
-  constructor() { }
+  tituloPagina: string = "Persona";
+  datos = null;
+  datos2 = null;
+
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.datos = this.activatedRoute.snapshot.paramMap.get('userId');
+    this.datos2 = this.activatedRoute.snapshot.paramMap.get('otro');
+    console.log(this.datos);
+    console.log(this.datos2);
   }
 
 }
