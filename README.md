@@ -50,14 +50,16 @@ Segun Slide 23 y 24
 
 ### 5)Agregar una imagen en la barra de navegación
 
-Segun Slides
+Segun Slides 24
+Ajuste scss para correcta visualización
 
 ### 6)Crear una lista en home
 
-Segun Slide 24
-Ajuste scss para correcta visualización
+https://ionicframework.com/docs/api/list
 
 ### 7)Utilizar un objeto json para el contenido
+
+Segun Slide 
 
 ### 8)Transformar el header en componente
 
