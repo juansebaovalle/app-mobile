@@ -59,7 +59,7 @@ https://ionicframework.com/docs/api/list
 
 ### 7)Utilizar un objeto json para el contenido
 
-Segun Slide 
+Segun Slide 25
 
 ### 8)Transformar el header en componente
 

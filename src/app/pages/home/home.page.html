@@ -8,21 +8,15 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-label>Pokémon Yellow</ion-label>
+  <ion-list *ngIf="listadoPersonas">
+    <ion-item *ngFor='let persona of listadoPersonas'>
+        <ion-avatar slot="start">
+            <img [src]='persona.avatar'>
+        </ion-avatar>
+        <ion-label>
+            <h2>{{ persona.first_name }}</h2>
+            <h3>{{ persona.last_name }}</h3>
+        </ion-label>
     </ion-item>
-    <ion-item>
-      <ion-label>Mega Man X</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>The Legend of Zelda</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Pac-Man</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Super Mario World</ion-label>
-    </ion-item>
-  </ion-list>
+</ion-list>
 </ion-content>
