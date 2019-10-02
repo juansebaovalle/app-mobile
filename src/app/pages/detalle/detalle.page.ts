@@ -9,16 +9,17 @@ import { ActivatedRoute } from '@angular/router';
 export class DetallePage implements OnInit {
 
   tituloPagina: string = "Persona";
-  datos = null;
-  datos2 = null;
+  usuario = null;
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute) { 
+    this.activatedRoute.queryParams.subscribe(params => {
+      this.usuario = JSON.parse(params["user"]);
+  });
+  }
 
   ngOnInit() {
-    this.datos = this.activatedRoute.snapshot.paramMap.get('userId');
-    this.datos2 = this.activatedRoute.snapshot.paramMap.get('otro');
-    console.log(this.datos);
-    console.log(this.datos2);
+    console.log(this.usuario);
+    this.tituloPagina = this.usuario.first_name + ' ' + this.usuario.last_name;
   }
 
 }
