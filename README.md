@@ -55,6 +55,7 @@ Segun Slides
 ### 6)Crear una lista en home
 
 Segun Slide 24
+Ajuste scss para correcta visualización
 
 ### 7)Utilizar un objeto json para el contenido
 
